@@ -1,0 +1,24 @@
+{
+  "name": "30_days_css",
+  "version": "1.0.0",
+  "description": "<p> 30 days of CSS3, is a challenge that aims to help you improve coding skills by doing mini daily projects, using only HTML5 and CSS3./ 30 dias de CSS3, é um desafio que visa ajudá-lo a melhorar suas habilidades de codificação fazendo mini projetos diários, usando apenas HTML5 e CSS3.</p>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heinrick-Senna/30_Days_CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Heinrick-Senna/30_Days_CSS/issues"
+  },
+  "homepage": "https://github.com/Heinrick-Senna/30_Days_CSS#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mustache": "^4.1.0"
+  }
+}

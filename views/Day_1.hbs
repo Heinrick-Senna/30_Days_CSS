@@ -1,0 +1,173 @@
+<div id="Container">
+    <div id="GridTemplate">
+        <input id="skill" type="checkbox"/>
+        <label for="skill"></label>
+        <input id="skill3" type="checkbox"/>
+        <label for="skill3"></label>
+        <input id="skill4" type="checkbox"/>
+        <label for="skill4"></label>
+        <input id="skill5" type="checkbox"/>
+        <label for="skill5"></label>
+        <input id="skill6" type="checkbox"/>
+        <label for="skill6"></label>
+        <input id="skill7" type="checkbox"/>
+        <label for="skill7"></label>
+        <input id="skill8" type="checkbox"/>
+        <label for="skill8"></label>
+        <input id="skill9" type="checkbox"/>
+        <label for="skill9"></label>
+        <input id="skill10" type="checkbox"/>
+        <label for="skill10"></label>
+        <input id="skill11" type="checkbox"/>
+        <label for="skill11"></label>
+        <input id="skill12" type="checkbox"/>
+        <label for="skill12"></label>
+        <input id="skill13" type="checkbox"/>
+        <label for="skill13"></label>
+        <input id="skill14" type="checkbox"/>
+        <label for="skill14"></label>
+        <input id="skill15" type="checkbox"/>
+        <label for="skill15"></label>
+        <input id="skill16" type="checkbox"/>
+        <label for="skill16"></label>
+        <input id="skill17" type="checkbox"/>
+        <label for="skill17"></label>
+        <input id="skill18" type="checkbox"/>
+        <label for="skill18"></label>
+    </div>
+</div>
+
+
+
+<style>
+    #Container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(76, 76, 76);
+    }
+
+    #GridTemplate {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-column-gap: 4vw;
+        grid-row-gap: 2vw;
+    }
+
+    input[type=checkbox] {
+        display:none;
+    }
+
+    input[type=checkbox] + label {
+        width: 8vw;
+        height: 8vh;
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        display:inline-block;
+        transition: all 400ms ease;
+    }
+
+    input[type=checkbox]:checked + label {
+        box-shadow: .2vw .2vw .5vw white;
+        filter: blur(0)!important;
+    }
+
+    #GridTemplate:hover label{
+        filter: blur(.2vw);
+    }
+
+    label:hover {
+        transform: scale(1.15);
+        cursor: pointer;
+        filter: blur(0)!important;
+    }
+
+    label:nth-of-type(13) {
+        grid-column: 2;
+    }
+
+    label:nth-of-type(14) {
+        grid-column-start: 1;
+    }
+
+    label:nth-of-type(17) {
+        grid-column: 2;
+        grid-row: 7;
+    }
+
+    input:nth-of-type(1) + label {
+        background-image: url('/Day_1/Imgs/skillgroup1.jpg');
+    }
+
+    input:nth-of-type(2) + label {
+        background-image: url('/Day_1/Imgs/skillgroup2.jpg');
+    }
+
+    input:nth-of-type(3) + label {
+        background-image: url('/Day_1/Imgs/skillgroup3.jpg');
+    }
+
+    input:nth-of-type(4) + label {
+        background-image: url('/Day_1/Imgs/skillgroup4.jpg');
+    }
+
+    input:nth-of-type(5) + label {
+        background-image: url('/Day_1/Imgs/skillgroup5.jpg');
+    }
+
+    input:nth-of-type(6) + label {
+        background-image: url('/Day_1/Imgs/skillgroup6.jpg');
+    }
+
+    input:nth-of-type(7) + label {
+        background-image: url('/Day_1/Imgs/skillgroup7.jpg');
+    }
+
+    input:nth-of-type(8) + label {
+        background-image: url('/Day_1/Imgs/skillgroup8.jpg');
+    }
+
+    input:nth-of-type(9) + label {
+        background-image: url('/Day_1/Imgs/skillgroup9.jpg');
+    }
+
+    input:nth-of-type(10) + label {
+        background-image: url('/Day_1/Imgs/skillgroup10.jpg');
+    }
+
+    input:nth-of-type(11) + label {
+        background-image: url('/Day_1/Imgs/skillgroup11.jpg');
+    }
+
+    input:nth-of-type(12) + label {
+        background-image: url('/Day_1/Imgs/skillgroup12.jpg');
+    }
+
+    input:nth-of-type(13) + label {
+        background-image: url('/Day_1/Imgs/skillgroup13.jpg');
+    }
+
+    input:nth-of-type(14) + label {
+        background-image: url('/Day_1/Imgs/skillgroup14.jpg');
+    }
+
+    input:nth-of-type(15) + label {
+        background-image: url('/Day_1/Imgs/skillgroup15.jpg');
+    }
+
+    input:nth-of-type(16) + label {
+        background-image: url('/Day_1/Imgs/skillgroup16.jpg');
+    }
+
+    input:nth-of-type(17) + label {
+        background-image: url('/Day_1/Imgs/skillgroup17.jpg');
+    }
+
+
+
+</style>
