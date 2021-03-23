@@ -58,21 +58,21 @@
         grid-row-gap: 2vw;
     }
 
-    input[type=checkbox] {
+    #GridTemplate input[type=checkbox] {
         display:none;
     }
 
-    input[type=checkbox] + label {
+    #GridTemplate input[type=checkbox] + label {
         width: 8vw;
         height: 8vh;
         background-size:cover;
         background-position:center;
         background-repeat: no-repeat;
         display:inline-block;
-        transition: all 400ms ease;
+        transition: filter 400ms ease, transform 400ms ease, box-shadow 200ms ease;
     }
 
-    input[type=checkbox]:checked + label {
+    #GridTemplate input[type=checkbox]:checked + label {
         box-shadow: .2vw .2vw .5vw white;
         filter: blur(0)!important;
     }
@@ -81,7 +81,7 @@
         filter: blur(.2vw);
     }
 
-    label:hover {
+    #GridTemplate label:hover {
         transform: scale(1.15);
         cursor: pointer;
         filter: blur(0)!important;

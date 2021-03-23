@@ -8,8 +8,137 @@
         margin: 0;
         padding: 0;
     }
+    #TittleDay {
+        position: absolute;
+        font: bold 3vw Agency FB;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        color: white;
+        user-select: none;
+        cursor: pointer;
+        padding: 1vw;
+        background-color: rgb(59, 167, 230);
+        transition: background-color .2s ease-in;
+    }
+
+    #TittleDay input {
+        display: none;
+    }
+
+    #TittleDay label {
+        cursor: pointer;
+        background-image: none;
+        width: auto;
+        height: auto;
+        padding-left: .5vw;
+        
+    }
+
+    #TittleDay label svg {
+        width: 2.5vw!important;
+        fill: white;
+        transition: fill 200ms ease;
+        transform: rotateZ(90deg);
+    }
+
+    #TittleDay input:checked + label {
+        box-shadow: none;
+    }
+
+    #TittleDay input:checked + label svg {
+        fill: rgb(120, 236, 173);
+    }
+
+    #TittleDay input:checked ~ ul {
+        transform: scaleY(1);
+    }
+
+    #TittleDay ul {
+        margin: 1vw;
+        position: absolute;
+        float: right;
+        max-width: 10vw;
+        max-height: 60vh;
+        transform: scaleY(0);
+        overflow: auto;
+        transition: transform 400ms ease, height 400ms ease;
+        transform-origin: top;
+    }
+
+    #TittleDay ul::-webkit-scrollbar-track {
+    background-color: transparent;
+    }
+
+    #TittleDay ul::-webkit-scrollbar {
+        width: .4vw;
+        background: transparent;
+    }
+    
+    #TittleDay ul::-webkit-scrollbar-thumb {
+        background: rgb(59, 167, 230);
+    }
+
+    #TittleDay li {
+        text-align: center;
+    }
+
+    #TittleDay li a {
+        padding: 1vw;
+        color: white;
+        text-decoration: none;
+    }
+
+    #TittleDay li a:hover {
+        color: rgb(120, 236, 173);
+    }
+
+    #TittleDay:hover {
+        background-color: rgb(114, 189, 233);
+    }
+
 </style>
 <body>
+    <div id="TittleDay">
+        Dia: {{day}} 
+        <input id="Listdays" type="checkbox">
+        <label for="Listdays">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg>
+        </label>
+
+        <br>
+        <ul>
+            <li><a href="/Days/1">1</a></li>
+            <li><a href="/Days/2">2</a></li>
+            <li><a href="/Days/3">3</a></li>
+            <li><a href="/Days/4">4</a></li>
+            <li><a href="/Days/5">5</a></li>
+            <li><a href="/Days/6">6</a></li>
+            <li><a href="/Days/7">7</a></li>
+            <li><a href="/Days/8">8</a></li>
+            <li><a href="/Days/9">9</a></li>
+            <li><a href="/Days/10">10</a></li>
+            <li><a href="/Days/11">11</a></li>
+            <li><a href="/Days/12">12</a></li>
+            <li><a href="/Days/13">13</a></li>
+            <li><a href="/Days/14">14</a></li>
+            <li><a href="/Days/15">15</a></li>
+            <li><a href="/Days/16">16</a></li>
+            <li><a href="/Days/17">17</a></li>
+            <li><a href="/Days/18">18</a></li>
+            <li><a href="/Days/19">19</a></li>
+            <li><a href="/Days/20">20</a></li>
+            <li><a href="/Days/21">21</a></li>
+            <li><a href="/Days/22">22</a></li>
+            <li><a href="/Days/23">23</a></li>
+            <li><a href="/Days/24">24</a></li>
+            <li><a href="/Days/25">25</a></li>
+            <li><a href="/Days/26">26</a></li>
+            <li><a href="/Days/27">27</a></li>
+            <li><a href="/Days/28">28</a></li>
+            <li><a href="/Days/29">29</a></li>
+            <li><a href="/Days/30">30</a></li>
+        </ul>
+    </div>
 
     {{{body}}}
 

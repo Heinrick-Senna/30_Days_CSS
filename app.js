@@ -7,7 +7,7 @@ const express = require('express'), app = express(), exphbs = require('express-h
     app.use(express.static(__dirname + '/views'));
 
 app.get('/Days/:day', function(req, res){
-    res.render('Day_' + req.params.day);
+    res.render('Day_' + req.params.day, {day: req.params.day});
 })
 
 app.listen(3000, function(){
