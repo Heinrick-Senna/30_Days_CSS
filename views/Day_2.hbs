@@ -1,0 +1,79 @@
+<div id="Container">
+    <div id="Grid-Container">
+        <div class="film-container"><div class="background-container"></div><span>Fight Clube</span></div>
+        <div class="film-container"><div class="background-container"></div><span>Django</span></div>
+        <div class="film-container"><div class="background-container"></div><span>Joker</span></div>
+    </div>
+</div>
+
+
+
+<style>
+    #Container {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(136, 136, 136);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #Grid-Container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 10vw;
+    }
+
+    .film-container {
+        cursor: pointer;
+        display: flex;
+        width: 15vw;
+        height: 70vh;
+        max-width: 15vw;
+        max-height: 70vh;
+        overflow: hidden;
+        transition: margin-top 200ms ease, box-shadow 300ms ease-in;
+    }
+
+    .film-container:hover {
+        margin-top: -1rem;
+        box-shadow: 2vw 2vw .5vw black;
+        transform: scale(1);
+    }
+
+    .film-container:hover > .background-container {
+        transform: scale(1.15);
+    }
+
+    .film-container:hover span {
+        opacity: 0;
+    }
+
+    .background-container {
+        position: absolute;
+        width: 15vw;
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: transform 800ms;
+    }
+
+    .film-container span {
+        text-align: center;
+        color: white;
+        font: normal 3vw airstream;
+        text-shadow: .1vw .2vw .15vw black;
+        width: 15vw;
+        position: absolute;
+        margin-top: 55vh;
+        transition: opacity 400ms ease;
+    }
+
+    .film-container:nth-of-type(1) .background-container {background-image: url('https://i.pinimg.com/originals/12/17/30/121730a5fbb46442c4e278719850a431.jpg');}
+    .film-container:nth-of-type(2) .background-container {background-image: url('https://wallpaperaccess.com/full/2142307.jpg');}
+    .film-container:nth-of-type(3) .background-container {background-image: url('https://images.alphacoders.com/105/1056130.jpg');}
+    
+
+</style>

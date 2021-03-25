@@ -1,0 +1,94 @@
+<div id="Container">
+    <div class="retangles"><span>1</span>
+    <div class="InfoCard">Isso é uma nota, para testes</div></div>
+    <div class="retangles"><span>2</span>
+    <div class="InfoCard">Isso é uma nota, para testes</div></div>
+    <div class="retangles"><span>3</span>
+    <div class="InfoCard">Isso é uma nota, para testes</div></div>
+    <div class="retangles"><span>4</span>
+    <div class="InfoCard">Isso é uma nota, para testes</div></div>
+    <div id="ImgBg"></div>
+</div>
+
+<style>
+    #Container {
+        overflow: hidden;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .retangles {
+        border-left: .3vw solid black;
+        width: 25vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .retangles span {
+        user-select: none;
+        text-align: center;
+        width: 100%;
+        border-top: .3vw solid black;
+        border-bottom: .3vw solid black;
+        font: normal 22vw airstream;
+        color: rgba(255,255,255, .6);
+        transition: color 300ms ease;
+    }
+
+    .InfoCard {
+        margin-top: 80vw;
+        position: absolute;
+        background-color: rgb(251, 255, 202);
+        width: 24.5vw;
+        height: 60vh;
+        transition: margin-top 300ms ease;
+        color: black;
+        font: normal 4vw Agency FB;
+        padding: 1.2vw;
+        text-indent: 2vw;
+    }
+
+    .retangles:hover > .InfoCard {
+        margin-top: 0;
+    }
+
+    .retangles:hover span {
+        color: black;
+    }
+
+    .retangles:hover:nth-of-type(1) ~ #ImgBg {
+        background-image: url('https://i.pinimg.com/originals/85/86/1a/85861a4bde5265ac45f18c781cf88465.jpg');
+    }
+
+    .retangles:hover:nth-of-type(2) ~ #ImgBg {
+        background-image: url('https://i.pinimg.com/originals/28/0d/61/280d6187a916255757daaf67dd3cdc2f.jpg');
+    }
+
+    .retangles:hover:nth-of-type(3) ~ #ImgBg {
+        background-image: url('https://i.pinimg.com/originals/f1/ac/85/f1ac85769444b1309094ead4cf42805b.jpg');
+    }
+
+    .retangles:hover:nth-of-type(4) ~ #ImgBg {
+        background-image: url('https://wallpaperaccess.com/full/35990.jpg');
+    }
+
+    #ImgBg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        transition: all 100ms ease;
+    }
+
+
+
+
+</style>

@@ -13,3 +13,7 @@ app.get('/Days/:day', function(req, res){
 app.listen(3000, function(){
     console.log('Servidor Rodando Na Porta 3000');
 })
+
+app.use((req, res, next) => {
+	res.redirect('/Days/1');
+})
